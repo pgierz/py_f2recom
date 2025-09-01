@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_f2recom"
+version = "0.1.0"
+authors = [
+    {name = "Paul Gierz", email = "paul.gierz@awi.de"},
+]
+description = "Python tools for F2RECOM model analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "xarray",
+    "dask",
+    "matplotlib",
+    "cartopy",
+    "cmocean",
+    "jupyter",
+    "pandas",
+    "netCDF4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "isort",
+    "mypy",
+    "jupyterlab",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+py_f2recom = "py_f2recom.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=py_f2recom --cov-report=term-missing"
+python_files = "test_*.py"
+python_functions = "test_*"
