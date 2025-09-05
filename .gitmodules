@@ -1,0 +1,4 @@
+[submodule "modules/pyfesom2"]
+	path = modules/pyfesom2
+	url = https://github.com/FESOM/pyfesom2.git
+	branch = main
