@@ -2,3 +2,7 @@
 	path = modules/pyfesom2
 	url = https://github.com/FESOM/pyfesom2.git
 	branch = py_f2recom
+[submodule "modules/SkillMetrics"]
+	path = modules/SkillMetrics
+	url = https://github.com/PeterRochford/SkillMetrics.git
+	branch = master
