@@ -26,9 +26,6 @@ https://gitlab.dkrz.de/py_recom/py_recom
 However, they could output the variables by assiggning an object (e.g., output = PHC3tempcomp()). 
 **Note3**: Use the MASTER script in the GlobalAssessment folder, to get a complete overview.
 
-FESOM2 documentation. https://fesom2.readthedocs.io/en/latest/geometry.html  
-REcoM2 documentation: https://recom.readthedocs.io/en/latest/intro.html
-
 py_recom allows in some analysis the masking/comparison of oceans, for example:
 
     Available regions:
