@@ -22,6 +22,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install -e modules/SkillMetrics/
+          pip install -e modules/pyfesom2/
           pip install -e '.[dev]'
       - name: Run tests
         run: "python -m pytest --cov=py_f2recom \n"
