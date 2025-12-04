@@ -6,9 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "py_f2recom"
 version = "0.1.0"
 authors = [
+    {name = "Laurent Oziel", email = "laurent.oziel@awi.de"},
+    {name = "Tanvi Nagwekar", email = "tanvi.nagwekar@awi.de"},
     {name = "Paul Gierz", email = "paul.gierz@awi.de"},
 ]
-description = "Python tools for F2RECOM model analysis"
+description = "Python tools for RECOM model analysis"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
@@ -26,6 +28,10 @@ dependencies = [
     "jupyter",
     "pandas",
     "netCDF4",
+    "scipy",
+    "pathlib",
+    # Note: pyfesom2 and SkillMetrics are installed from git submodules
+    # Install with: pip install -e modules/pyfesom2/ -e modules/SkillMetrics/
 ]
 
 [project.optional-dependencies]
