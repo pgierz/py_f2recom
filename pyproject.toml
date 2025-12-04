@@ -30,6 +30,7 @@ dependencies = [
     "netCDF4",
     "scipy",
     "pathlib",
+    "pyfesom2",
 ]
 
 [project.optional-dependencies]
